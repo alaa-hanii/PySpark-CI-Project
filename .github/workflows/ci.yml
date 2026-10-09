@@ -1,6 +1,8 @@
 name: PySpark CI
 
 on:
+  push:
+    branches: [main, feature/add-ci-workflow]
   pull_request:
     branches: [main]
     types: [opened, synchronize, reopened]
